@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_order_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_item_person"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="Kimden : Test User"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_order_item_ordered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tarih : 20-01-2020 10:53" />
+
+            <TextView
+                android:id="@+id/tv_order_item_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teslim edildi." />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_item_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:text="36,00 ₺"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

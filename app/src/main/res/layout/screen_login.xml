@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".App.Screens.LoginScreen">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/logo_font"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="96sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_dark"
+            android:drawableStart="@drawable/ic_email_light"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="textEmailAddress"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_dark"
+            android:drawableStart="@drawable/ic_password_light"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Şifre"
+            android:padding="12dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="textPassword"/>
+
+
+        <CheckBox
+            android:id="@+id/chb_login_keep_logged"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Oturumum Açık Kalsın" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="36dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/helvetica"
+            android:text="Giriş Yap"
+            app:cornerRadius="28dp"
+            android:onClick="OnClickScreenLogin"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <!--<Button
+            android:id="@+id/btn_login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_flat_dark"
+            android:fontFamily="@font/helvetica"
+            android:onClick="OnClickScreenLogin"
+            android:text="Kaydol"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark" />-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+</LinearLayout>

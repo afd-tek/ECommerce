@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".App.Screens.MainScreen">
+
+    <include android:id="@+id/tb_main" layout="@layout/toolbar_main" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_light_gradient"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/et_main_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:hint="Arama"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:imeOptions="actionDone" />
+
+        <ImageView
+            android:id="@+id/btn_main_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search_dark" />
+
+    </LinearLayout>
+
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabs_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="#00000000"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="#118df0"-->
+<!--        app:tabMaxWidth="0dp"-->
+<!--        app:tabMode="scrollable"-->
+<!--        app:tabSelectedTextColor="#3b3b3b"-->
+<!--        app:tabTextColor="#a9a9b0" />-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.7dp"-->
+<!--        android:background="#efefef" />-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/vp_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+

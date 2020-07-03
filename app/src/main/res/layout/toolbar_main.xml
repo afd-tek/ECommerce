@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_toolbar_main_user_photo"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_profile_sample"/>
+
+    <LinearLayout
+        android:layout_marginStart="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_toolbar_main_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="start"
+            android:text="Test User"
+            android:textColor="#3b3b3b"
+            android:textSize="14sp"/>
+
+        <View
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="95dp"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_toolbar_main_logout"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_logout_light"
+        android:contentDescription="Oturumu Kapat"/>
+
+    <ImageButton
+        android:id="@+id/btn_toolbar_main_cart"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_shopping_cart_dark"
+        android:background="@android:color/transparent"
+        android:contentDescription="Sepet" />
+
+    <ImageButton
+        android:id="@+id/btn_toolbar_main_orders"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_transport"
+        android:tint="@color/colorPrimaryDark"
+        android:contentDescription="Siparişler"/>
+
+</androidx.appcompat.widget.Toolbar>

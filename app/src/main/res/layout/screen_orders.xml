@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".App.Screens.OrderScreen">
+
+    <ImageButton
+        android:id="@+id/ibtn_order_screen_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back_dark"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_screen_order_from"
+            android:text="Verilen"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_screen_order_to"
+            android:text="Alınan"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_screen_order_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
